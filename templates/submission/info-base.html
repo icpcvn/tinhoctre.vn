@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <span class="submission-info">
+        <span class="submission-date">{{ submission.date|date(_("N j, Y, g:i a")) }}
+            {% with can_edit=submission.problem.is_editable_by(request.user) %}
+                {%- if can_edit and submission.judged_on %}
+                    {%- trans name=submission.judged_on.name-%} on judge {{ name }} {%- endtrans -%}
+                {% endif %}
+                <br>
+                <span>{{ submission.language }}</span>
+                {% if can_edit %}
+                    [<a href="{{ url('admin:judge_submission_change', submission.id) }}">{{ _('Admin') }}</a>]
+                {% endif %}
+            {% endwith %}
+        </span>
+    </span>
+{% endblock %}

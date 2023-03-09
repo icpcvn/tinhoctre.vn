@@ -1,0 +1,43 @@
+Django>=2.2,<3
+django-cleanup
+django_compressor
+django-mptt
+django-pagedown<2
+django-registration-redux
+django-reversion
+django-social-share
+django-sortedm2m @ git+https://github.com/DMOJ/django-sortedm2m.git
+django-impersonate
+django-redis
+dmoj-wpadmin @ git+https://github.com/DMOJ/dmoj-wpadmin.git
+lxml
+Pygments
+mistune<2
+social-auth-app-django
+pytz
+django-statici18n
+pika
+ua-parser
+pyyaml
+jinja2
+django_jinja
+llist
+requests
+django-fernet-fields
+pyotp
+qrcode[pil]
+jsonfield
+pymoss
+packaging
+celery
+ansi2html @ git+https://github.com/DMOJ/ansi2html.git
+sqlparse
+lupa
+martor @ git+https://github.com/VNOI-Admin/martor.git
+netaddr
+webauthn<1
+bleach<5
+markdown2 @ git+https://github.com/VNOI-Admin/python-markdown2.git
+discord-webhook
+django-admin-sortable2<2
+icalendar
